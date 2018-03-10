@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "272123941197",
+    "firebase_url": "https://librarymanager-20ebd.firebaseio.com",
+    "project_id": "librarymanager-20ebd",
+    "storage_bucket": "librarymanager-20ebd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272123941197:android:a806c2a97bc4d345",
+        "android_client_info": {
+          "package_name": "br.com.marciocantos.librarymanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272123941197-g1177dfqpn9v1dhgrtfq0dtulc635qli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.marciocantos.librarymanager",
+            "certificate_hash": "5383d7fbac2df5c7f37de8a56150af1a6ec05d08"
+          }
+        },
+        {
+          "client_id": "272123941197-u6psuf89pf1nki7igj52ls3fjvjijlo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt1oLr5dK4nTmIdcKYlbyw4MaxteBBHEI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272123941197-u6psuf89pf1nki7igj52ls3fjvjijlo9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
