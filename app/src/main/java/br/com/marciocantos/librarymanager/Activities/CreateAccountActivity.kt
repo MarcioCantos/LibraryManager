@@ -8,12 +8,13 @@ import android.text.TextUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import br.com.marciocantos.librarymanager.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.fragment_cadastro.*
+import kotlinx.android.synthetic.main.activity_create_account.*
 
 class CreateAccountActivity : AppCompatActivity() {
 
@@ -34,6 +35,7 @@ class CreateAccountActivity : AppCompatActivity() {
     private var nome: String? = null
     private var email: String? = null
     private var senha: String? = null
+    private var btnRetornaLogin: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,12 +51,19 @@ class CreateAccountActivity : AppCompatActivity() {
         etSenha = et_Password
         btCadastro = btn_Cadastro
         mProgressBar = ProgressDialog(this)
+        btnRetornaLogin = txtJaCadastrado as TextView
 
         mDatabase = FirebaseDatabase.getInstance()
         mDatabaseReference = mDatabase!!.reference!!.child("Users")
         mAuth = FirebaseAuth.getInstance()
 
         btCadastro!!.setOnClickListener { createNewAccount() }
+
+        btnRetornaLogin!!.setOnClickListener {
+            startActivity(
+                    Intent(this@CreateAccountActivity, LoginActivity::class.java)
+            )
+        }
 
     }
 
