@@ -6,4 +6,45 @@
     android:layout_height="match_parent"
     tools:context="br.com.marciocantos.librarymanager.Activities.CreateAccountActivity">
 
+
+   <EditText
+    android:id="@+id/et_Nome"
+    style="@style/viewCustom"
+    android:hint="@string/nome"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Email"
+        style="@style/viewCustom"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Nome" />
+
+    <EditText
+        android:id="@+id/et_Password"
+        style="@style/viewCustom"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Email" />
+
+    <Button
+        android:id="@+id/btn_Cadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrar"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Password" />
+
 </android.support.constraint.ConstraintLayout>

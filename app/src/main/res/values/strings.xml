@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">LibraryManager</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cadastro">Cadastro de Usuário</string>
+    <string name="nome">nome</string>
+    <string name="email">E-mail</string>
+    <string name="cadastrar">Finalizar Cadastro</string>
+    <string name="senha">senha</string>
 </resources>
